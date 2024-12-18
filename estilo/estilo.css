@@ -1,0 +1,146 @@
+
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  background-color: #c5c5c5;
+  width: 100%;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;  /*Hay un color de primer plano establecido y no hay color de fondo*/
+    margin: 0 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+nav ul li a{
+    color:rgb(0, 0, 0);
+}
+
+.migas {
+    font-size: 0.8em; 
+    color: rgb(255, 255, 255);  /*Hay un color de primer plano establecido y no hay color de fondo*/
+    background-color:blue;
+    margin-top: 1%;
+    width: 15%;
+}
+.migas a{
+  color: rgb(255, 255, 255);  /*Hay un color de primer plano establecido y no hay color de fondo*/
+}
+
+header {
+    background-color: blue;
+    width: 100%;
+}
+
+header a{
+    color: white;
+    text-decoration: none; /*Hay un color de primer plano establecido y no hay color de fondo*/
+}
+
+h2 {
+    color: #535353;
+}
+
+h1{
+    color: white;
+    font-size: 3em; /*Hay un color de primer plano establecido y no hay color de fondo*/
+}
+
+p{
+  margin: 0 15px; 
+  font-size: 1em; 
+}
+
+a:hover{
+  color: rgb(255, 0, 0); 
+  text-decoration: underline; /*Hay un color de primer plano establecido y no hay color de fondo*/
+}
+
+a:active {
+  color: rgb(255, 141, 146);  /*Hay un color de primer plano establecido y no hay color de fondo*/
+}
+
+main ul {
+  list-style-type: square; 
+  font-size: 1.2em;
+}
+
+li ul{
+  list-style-type: circle;
+  color: rgb(55, 0, 255); /*Hay un color de primer plano establecido y no hay color de fondo*/
+}
+
+ol{
+  list-style-type: upper-roman; 
+  font-size: 1em;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 1.3em; 
+  color: #ff0000; 
+  background-color: black;
+}
+
+dd {
+
+  font-size: 1.2em; 
+  color: #292929; 
+  background-color: #ecf0f1; 
+  padding: 10px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espacio entre el botón y el carrusel */
+}
+
+section figure {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  max-width: 200px; /* Máximo ancho */
+  height: auto; /* Altura ajustada automáticamente */
+}
+
+section img {
+  width: 100%; /* Las imágenes ocupan todo el ancho */
+  flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+  transition: transform 0.5s ease; /* Transición suave */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+body > div:first-of-type {
+  width: 100%;       /* El mapa ocupará todo el ancho del contenedor */
+  height: 400px;     /* El mapa tendrá una altura de 400px */
+  background-color: #eaeaea;  /* Un fondo gris claro para representar el área del mapa */
+}
+
+
+section img:hover {
+  transform: scale(1.1); /* Efecto de aumento de tamaño */
+  filter: brightness(1.1); /* Iluminar la imagen */
+}
+

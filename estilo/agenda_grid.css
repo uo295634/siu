@@ -1,0 +1,65 @@
+/* Establecer un layout de grid para el contenedor principal */
+body > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columnas automáticas con un mínimo de 250px */
+  gap: 20px; /* Espaciado entre los elementos */
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Estilo para cada artículo dentro del grid (representando una carrera) */
+article {
+  background-color: #f0f0f0; /* Fondo claro para cada item */
+  border: 1px solid #ddd;    /* Bordes suaves */
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+/* Efecto al pasar el ratón sobre cada artículo */
+article:hover {
+  transform: translateY(-5px); /* Efecto de desplazamiento */
+}
+
+/* Estilos para los títulos dentro de los artículos */
+article > header > h3 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+/* Estilos para los párrafos dentro de los artículos */
+article p {
+  font-size: 1em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Estilo para los párrafos con un fuerte énfasis */
+article p strong {
+  font-weight: bold;
+}
+
+/* Asegurar que los encabezados y párrafos dentro de los artículos no se salgan del contenedor */
+article p {
+  word-wrap: break-word;
+}
+
+/* El botón para obtener las carreras */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+
+/* Cambiar el color de fondo del botón cuando se pasa el ratón */
+button:hover {
+  background-color: #0056b3;
+}

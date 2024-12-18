@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>F1 Desktop - API</title>
+    <link rel="icon" href="multimedia/imagenes/icon.ico" type="image/x-icon">
+    <meta name="author" content="Miguel" />
+    <meta name="description" content="Aplicación que utiliza API" />
+    <meta name="keywords" content="aplicación, servicio" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html">Piloto</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="viajes.php">Viajes</a>
+            <a href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+
+    <p>Estás en: <a href="index.html">Inicio</a> >> API</p>
+
+    <h2>Interactúa con las APIs de HTML5</h2>
+
+    <section>
+        <h3>Gráfico de un Coche de F1 (SVG API)</h3>
+        <button>Generar Aston Martin</button>
+        <button>Generar Renault 2005</button>
+        <div></div> <!-- Contenedor para el gráfico SVG -->
+    </section>
+    
+    
+
+    <section>
+        <h3>Juego de Arrastrar y Soltar (Drag and Drop)</h3>
+        <p>Arrastra los nombres de los circuitos hacia las ciudades correctas:</p>
+        <div>
+            <ul>
+                <li draggable="true">Suzuka</li>
+                <li draggable="true">Interlagos</li>
+                <li draggable="true">Silverstone</li>
+                <li draggable="true">Monza</li>
+                <li draggable="true">Zandvoort</li>
+                <li draggable="true">Catalunya</li>
+                <li draggable="true">Spa-Francorchamps</li>
+                <li draggable="true">Yas Marina</li>
+                <li draggable="true">Melbourne</li>
+                <li draggable="true">Portimão</li>
+            </ul>
+            <ul>
+                <li data-correct="Suzuka">Japón</li>
+                <li data-correct="Interlagos">Brasil</li>
+                <li data-correct="Silverstone">Reino Unido</li>
+                <li data-correct="Monza">Italia</li>
+                <li data-correct="Zandvoort">Países Bajos</li>
+                <li data-correct="Catalunya">España</li>
+                <li data-correct="Spa-Francorchamps">Bélgica</li>
+                <li data-correct="Yas Marina">Emiratos Árabes</li>
+                <li data-correct="Melbourne">Australia</li>
+                <li data-correct="Portimão">Portugal</li>
+            </ul>
+        </div>
+        <p></p>
+    </section>
+
+    <section>
+        <h3>Almacenar Circuitos Favoritos (Web Storage)</h3>
+        <label for="circuitoFavorito">Nombre del circuito:</label>
+        <input type="text" placeholder="Nombre del circuito">
+        <button>Guardar Circuito</button>
+        <p>Tu circuito favorito es: <span></span></p>
+    </section>
+
+    <script src="js/api.js"></script>
+</body>
+</html>

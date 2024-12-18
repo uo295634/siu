@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuito xmlns="http://www.uniovi.es"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
+
+    <nombre>Albert Park</nombre>
+    <longitud>5.278</longitud>
+    <anchuraMedia>14</anchuraMedia>
+    <fechaCarrera>2024-11-17</fechaCarrera>
+    <horaInicio>05:00:00</horaInicio>
+    <numeroVueltas>58</numeroVueltas>
+    <localidad>Melbourne</localidad>
+    <pais>Australia</pais>
+
+    <referencias>
+        <referencia>https://www.formula1.com/en/racing/2024/Australia.html</referencia>
+        <referencia>https://en.wikipedia.org/wiki/Albert_Park_Circuit</referencia>
+        <referencia>https://www.circuitoaustralia.com.au</referencia>
+    </referencias>
+
+    <galeriaFotografias>
+        <fotografia>Panorama.jpg</fotografia>
+        <fotografia>RectaMeta.jpg</fotografia>
+        <fotografia>Curva1.jpeg</fotografia>
+    </galeriaFotografias>
+
+    <galeriaVideos>
+        <video>vuelta_rapida.mp4</video>
+        <video>choques.mp4</video>
+    </galeriaVideos>
+
+    <coordenadas>
+        <longitud>144.9696</longitud>
+        <latitud>-37.8505</latitud>
+        <altitud>14</altitud>
+    </coordenadas>
+<tramos>
+    <tramo>
+        <distancia unidad="metros">418</distancia>
+        <longitudInicial>144.9696</longitudInicial>
+        <latitudInicial>-37.8505</latitudInicial>
+        <altitudInicial>14</altitudInicial>
+        <sector>1</sector>
+    </tramo>
+	<tramo>
+		<distancia unidad="metros">82</distancia>
+		<longitudInicial>144.9659</longitudInicial>
+		<latitudInicial>-37.8476</latitudInicial>
+		<altitudInicial>12</altitudInicial>
+		<sector>1</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">92</distancia>
+		<longitudInicial>144.9662</longitudInicial>
+		<latitudInicial>-37.8468</latitudInicial>
+		<altitudInicial>13</altitudInicial>
+		<sector>1</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">590</distancia>
+		<longitudInicial>144.9659</longitudInicial>
+		<latitudInicial>-37.8461</latitudInicial>
+		<altitudInicial>10</altitudInicial>
+		<sector>1</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">142</distancia>
+		<longitudInicial>144.9621</longitudInicial>
+		<latitudInicial>-37.8422</latitudInicial>
+		<altitudInicial>11</altitudInicial>
+		<sector>1</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">222</distancia>
+		<longitudInicial>144.9636</longitudInicial>
+		<latitudInicial>-37.8418</latitudInicial>
+		<altitudInicial>12</altitudInicial>
+		<sector>1</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">429</distancia>
+		<longitudInicial>144.9637</longitudInicial>
+		<latitudInicial>-37.8399</latitudInicial>
+		<altitudInicial>12</altitudInicial>
+		<sector>1</sector>
+	</tramo>
+	 <tramo>
+        <distancia unidad="metros">106</distancia>
+        <longitudInicial>144.9678</longitudInicial>
+        <latitudInicial>-37.8380</latitudInicial>
+        <altitudInicial>13</altitudInicial>
+        <sector>2</sector>
+    </tramo>
+	<tramo>
+		<distancia unidad="metros">160</distancia>
+		<longitudInicial>144.9693</longitudInicial>
+		<latitudInicial>-37.8386</latitudInicial>
+		<altitudInicial>15</altitudInicial>
+		<sector>2</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">297</distancia>
+		<longitudInicial>144.9708</longitudInicial>
+		<latitudInicial>-37.8390</latitudInicial>
+		<altitudInicial>16</altitudInicial>
+		<sector>2</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">365</distancia>
+		<longitudInicial>144.9717</longitudInicial>
+		<latitudInicial>-37.8417</latitudInicial>
+		<altitudInicial>15</altitudInicial>
+		<sector>2</sector>
+	</tramo>
+    <tramo>
+        <distancia unidad="metros">200</distancia>
+        <longitudInicial>144.9705</longitudInicial>
+        <latitudInicial>-37.8447</latitudInicial>
+        <altitudInicial>16</altitudInicial>
+        <sector>3</sector>
+
+    </tramo>
+	<tramo>
+		<distancia unidad="metros">239</distancia>
+		<longitudInicial>144.9712</longitudInicial>
+		<latitudInicial>-37.8466</latitudInicial>
+		<altitudInicial>16</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">124</distancia>
+		<longitudInicial>144.9733</longitudInicial>
+		<latitudInicial>-37.8481</latitudInicial>
+		<altitudInicial>14</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">298</distancia>
+		<longitudInicial>144.9747</longitudInicial>
+		<latitudInicial>-37.8481</latitudInicial>
+		<altitudInicial>14</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">386</distancia>
+		<longitudInicial>144.9773</longitudInicial>
+		<latitudInicial>-37.8499</latitudInicial>
+		<altitudInicial>15</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">236</distancia>
+		<longitudInicial>144.9785</longitudInicial>
+		<latitudInicial>-37.8534</latitudInicial>
+		<altitudInicial>16</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">68</distancia>
+		<longitudInicial>144.9760</longitudInicial>
+		<latitudInicial>-37.8539</latitudInicial>
+		<altitudInicial>15</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">214</distancia>
+		<longitudInicial>144.9753</longitudInicial>
+		<latitudInicial>-37.8536</latitudInicial>
+		<altitudInicial>14</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">153</distancia>
+		<longitudInicial>144.9740</longitudInicial>
+		<latitudInicial>-37.8521</latitudInicial>
+		<altitudInicial>15</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+		<distancia unidad="metros">420</distancia>
+		<longitudInicial>144.9726</longitudInicial>
+		<latitudInicial>-37.8529</latitudInicial>
+		<altitudInicial>14</altitudInicial>
+		<sector>3</sector>
+	</tramo>
+	<tramo>
+        <distancia unidad="metros">0</distancia>
+        <longitudInicial>144.9696</longitudInicial>
+        <latitudInicial>-37.8505</latitudInicial>
+        <altitudInicial>15</altitudInicial>
+        <sector>1</sector>
+    </tramo>
+</tramos>
+</circuito>

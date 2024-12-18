@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>F1 Desktop - Circuito</title>
+    <link rel="icon" href="multimedia/imagenes/icon.ico" type="image/x-icon">
+    <meta name="author" content="Miguel" />
+    <meta name="description" content="Página que muestra los circuitos de F1" />
+    <meta name="keywords" content="F1, circuitos, carreras" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/circuito.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Cargar el script de Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=initMap"></script>
+    <script src="js/circuito.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html">Piloto</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="viajes.php">Viajes</a>
+            <a href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+
+    <p>Estás en: <a href="index.html">Inicio</a> >> Circuito</p>
+
+    <h2>Sube un archivo XML de circuito</h2>
+
+    <!-- Control para cargar el archivo -->
+    <form>
+		<label for="archivo">Archivo (XML o KML):</label>
+		<input type="file" id="archivo" accept=".xml, .kml" onchange="procesarArchivo(this.files);" />
+	</form>
+
+    <h3>Detalles del Archivo</h3>
+    <section>
+        <p id="nombreArchivo">Nombre del archivo:</p>
+        <p id="tamañoArchivo">Tamaño del archivo:</p>
+        <p id="tipoArchivo">Tipo del archivo:</p>
+        <p id="ultimaModificacion">Última modificación:</p>
+    </section>
+
+    <h3>Contenido del archivo XML:</h3>
+    <section id="contenidoCircuito">
+        <h4>Información del Circuito</h4>
+        <!-- Aquí se mostrará la información del circuito -->
+    </section>
+    <section id="mensajesError">
+        <h4>Mensajes de Error:</h4>
+        <p id="errorLectura"></p>
+    </section>
+
+    <section>
+        <h3>Mapa del circuito</h3>
+        <div id="mapa"></div> <!-- Contenedor para el mapa -->
+    </section>
+</body>
+</html>

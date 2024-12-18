@@ -1,0 +1,73 @@
+/* Estilo para el mapa */
+#mapa {
+  height: 400px; /* Establecer la altura del mapa */
+  width: 100%; /* El mapa ocupa el 100% del ancho disponible */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  border: 1px solid #ddd; /* Borde sutil alrededor del mapa */
+}
+
+/* Estilo para las secciones de detalles del archivo */
+section {
+  margin-bottom: 20px; /* Espaciado entre secciones */
+  background-color: #fff; /* Fondo blanco para cada sección */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+section h3 {
+  font-size: 1.5em; /* Tamaño de fuente de los títulos de sección */
+  color: #333; /* Color de texto para los títulos */
+  margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+section p {
+  font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
+  color: #555; /* Color de texto más suave */
+}
+
+/* Estilo para los errores */
+#mensajesError p {
+  color: red; /* Texto en rojo para los errores */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilo para el formulario de carga de archivo */
+form {
+  margin-bottom: 20px;
+  background-color: #fff; /* Fondo blanco */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="file"] {
+  padding: 8px;
+  font-size: 1em; /* Asegura que el tamaño del texto sea adecuado */
+  background-color: #f0f0f0; /* Fondo gris claro */
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 4px; /* Bordes redondeados */
+  margin-top: 10px;
+}
+
+/* Estilo para el contenedor de la información del archivo */
+#detallesArchivo {
+  margin-bottom: 20px;
+  background-color: #fff; /* Fondo blanco */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los detalles del archivo (nombre, tamaño, tipo, etc.) */
+#detallesArchivo p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#detallesArchivo p strong {
+  font-weight: bold; /* Resaltar las etiquetas de los detalles */
+  color: #000;
+}

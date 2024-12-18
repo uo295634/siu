@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>F1 Desktop-Inicio</title>
+    <link rel="icon" href="multimedia/imagenes/icon.ico" type="image/x-icon">
+    <meta name="author" content="Miguel" />
+    <meta name="description" content="Documento inicial del F1 Desktop" />
+    <meta name="keywords" content="inicio, menú, index" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <!-- Incluimos la librería jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Incluimos el archivo fondo.js -->
+    <script src="js/fondo.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"> F1 Desktop </a></h1>
+        <nav>
+            <a href="index.html" title="enlace al inicio">Inicio</a>
+            <a href="piloto.html" title="enlace a piloto">Piloto</a>
+            <a href="noticias.html" title="enlace a noticias">Noticias</a>
+            <a href="calendario.html" title="enlace a calendario">Calendario</a>
+            <a href="meteorologia.html" title="enlace a meteorologia">Meteorología</a>
+            <a href="circuito.html" title="enlace a circuito">Circuito</a>
+            <a href="viajes.php" title="enlace a viajes">Viajes</a>
+            <a href="juegos.html" title="enlace a juegos">Juegos</a>
+        </nav>
+    </header>
+    
+    <h2>Elemento inicial de la página desarrollada para SEW</h2>
+    <h1>Imágenes de Circuitos de F1</h1>
+    <p>Imágenes del Circuito de Albert Park obtenidas de <a href="https://www.flickr.com/">Flickr</a></p>
+
+    <script>
+        const fondo = new Fondo("Australia", "Canberra", "Albert Park");
+        (function() {
+            const apiKey = 'f310030b71af34b41ea2842df798c42d'; // API Key
+            const flickrAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+
+            $.getJSON(flickrAPI, {
+                tags: fondo.circuito,
+                format: "json"
+            })
+            .done(function(data) {
+                if (data.items.length > 0) {
+                    const backgroundUrl = data.items[0].media.m.replace("_m", "_b");
+                    $("body").css("background-image", "url('" + backgroundUrl + "')");
+                    $("body").css("background-size", "cover");
+                    $("body").css("background-attachment", "fixed");
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.uniovi.es" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="circuito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre" type="xs:string" />
+				<xs:element name="longitud" type="xs:float" />
+				<xs:element name="anchuraMedia" type="xs:float" />
+				<xs:element name="fechaCarrera" type="xs:date" />
+				<xs:element name="horaInicio" type="xs:time" />
+				<xs:element name="numeroVueltas"> 
+					<xs:simpleType> 
+						<xs:restriction base="xs:integer"> 
+							<xs:minInclusive value="1" /> 
+							<xs:maxInclusive value="100" /> 
+						</xs:restriction> 
+					</xs:simpleType> 
+				</xs:element>
+				<xs:element name="localidad" type="xs:string" />
+				<xs:element name="pais" type="xs:string" />
+				<xs:element name="referencias">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="referencia" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="galeriaFotografias">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="fotografia" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="galeriaVideos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="video" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="coordenadas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="longitud" type="xs:float" />
+							<xs:element name="latitud" type="xs:float" />
+							<xs:element name="altitud" type="xs:float" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tramos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="tramo">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="distancia">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:unsignedShort">
+														<xs:attribute name="unidad" type="xs:string" use="required" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="longitudInicial" type="xs:float" />
+										<xs:element name="latitudInicial" type="xs:float" />
+										<xs:element name="altitudInicial" type="xs:float" />
+										<xs:element name="sector" type="xs:integer" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

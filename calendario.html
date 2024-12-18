@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>F1 Desktop - Calendario</title>
+    <link rel="icon" href="multimedia/imagenes/icon.ico" type="image/x-icon">
+    <meta name="author" content="Miguel" />
+    <meta name="description" content="Calendario que muestra las carreras" />
+    <meta name="keywords" content="calendario, información" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/agenda_grid.css" /> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/agenda.js"></script> <!-- Referencia a agenda.js -->
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="enlace al inicio">Inicio</a>
+            <a href="piloto.html" title="enlace a piloto">Piloto</a>
+            <a href="noticias.html" title="enlace a noticias">Noticias</a>
+            <a href="calendario.html" title="enlace a calendario">Calendario</a>
+            <a href="meteorologia.html" title="enlace a meteorología">Meteorología</a>
+            <a href="circuito.html" title="enlace a circuito">Circuito</a>
+            <a href="viajes.php" title="enlace a viajes">Viajes</a>
+            <a href="juegos.html" title="enlace a juegos">Juegos</a>
+        </nav>
+    </header>
+    <p class="migas">Estás en: <a href="index.html">Inicio</a> >> Calendario</p>
+    <h2>Calendario actualizado con las próximas carreras</h2>
+    
+    <!-- Botón para obtener las carreras -->
+    <button>Obtener carreras</button>
+
+    <!-- Aquí se mostrará la lista de carreras -->
+    <section><h2>Pulsa el botón para obtener la lista</h2></section>
+
+    <script>
+        // Al hacer clic en el botón "Obtener carreras"
+        $('button').on('click', function() {
+            const agenda = new Agenda();  // Creamos una nueva instancia de la clase Agenda
+            agenda.obtenerCarreras();     // Llamamos al método obtenerCarreras para mostrar las carreras
+        });
+    </script>
+</body>
+</html>

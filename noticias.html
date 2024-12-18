@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>F1 Desktop - Noticias</title>
+    <link rel="icon" href="multimedia/imagenes/icon.ico" type="image/x-icon">
+    <meta name="author" content="Miguel" />
+    <meta name="description" content="Página que contiene noticias acerca de F1" />
+    <meta name="keywords" content="noticias, información" />
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />   
+    <link rel="stylesheet" type="text/css" href="estilo/article_elements.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/formulario.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/noticias.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html">Piloto</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="meteorologia.html">Meteorología</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="viajes.php">Viajes</a>
+            <a href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <p class="migas">Estás en: <a href="index.html">Inicio</a> >> Noticias</p>
+    <h2>Noticias recientes acerca de la actualidad de los pilotos, escuderías, nuevas normativas, etc...</h2>
+
+    <!-- Botón para cargar el archivo y área de visualización -->
+    <input type="file" accept=".txt" />
+
+    <!-- Formulario para añadir nuevas noticias -->
+    <h3>Añadir nueva noticia</h3>
+    <form>
+        <label>Título:</label>
+        <input type="text" name="titulo" required />
+        <br />
+        <label>Entradilla:</label>
+        <input type="text" name="entradilla" required />
+        <br />
+        <label>Autor:</label>
+        <input type="text" name="autor" required />
+        <br />
+        <button type="button">Añadir noticia</button>
+    </form>
+
+    <!-- Contenedor principal para las noticias -->
+    <main></main>
+</body>
